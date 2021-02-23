@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="C:\JS-PROJECT\CSS\style.css">
+    
     <title>Student Form</title>
 </head>
 <body>
@@ -17,27 +18,29 @@
                 <th>Joining-year</th>
                 <th>Birthday</th>
                 <th>Gender</th>
-                <th>Action</th>
+                <!-- <th>Edit</th>
+                <th>Update</th> -->
                 <th>Select</th>
-                <th>Edit</th>
-                <th>Done</th>
+                <th>Action</th>
+                <th>Update</th>  
          </tr>
             
         </table>
     </div>
 
 <div>
-  <div>
+
+    <div>
     <label for="sname">Name Of Student</label>
-    <input type="text" id="sname" name="name" placeholder="Your name..">
+    <input type="text" id="sname" name="name"  placeholder="Your name.." oninput="testCharInput()">
     <span id="vname"></span><br><br>
 
     <label for="roll">RollNo</label>
-    <input type="text" id="roll"  placeholder="Your Roll No..">
+    <input type="text" id="roll"  placeholder="Your Roll No.." oninput="testIntInput()">
     <span id="rn"></span><br><br>
 
     <label for="Department">Department</label>
-    <select id="dept">
+    <select id="dept" oninput="testselInput()">
       <option value="">None</option> 
       <option value="Computer">Computer</option>
       <option value="Maths">Maths</option>
@@ -48,28 +51,32 @@
     <span id="dpt"></span><br><br>
 
     <label for="Joining">Joining-Year</label>
-    <select name="year" id="year" required></select>
+    <select name="year" id="year" required ></select>
    
     <!-- <span id="yr"></span><br><br> -->
     <!-- <h3>birthday</h3> -->
     <label for="birthday">Birthday</label><br><br>
-    <input type="date"  name="birthday" id="birthday"> <br><br>
+    <input type="date"  name="birthday" id="birthday"  oninput="testInput()"> <br><br>
     <span id="birth"></span><br><br>
 
     <label for="gender">Gender</label><br><br>
-    <input type="radio"  name="Gender" value="Male" checked required> Male 
+    <input type="radio"  name="Gender" value="Male"  required> Male 
     <input type="radio"  name="Gender" value="Female" required> Female
     <span id="gend"></span>
    
    
-    <input type="submit" onclick="validation()" value="Submit">
-    <!-- <button id="btn1" onclick="editdata()">Edit Data</button> -->
-    <button id="btn" onclick="delMultiple()">RemoveSelectedROw</button>
-   
+    <input type="submit"  id ='register' onclick="validation()" value="Submit">
+    <!-- <button id="btn1" onclick="editdata()">Edit Data</button>
+    <button id="btn2" onclick="update()">update Data</button> -->
+    <!-- <button id="btn" onclick="delMultiple()">RemoveSelectedROw</button> -->
+       <div class="col">
+        <div class="new-btn"></div>
+      </div> 
 </div>
 </div>
-    
+
 <script src="C:\JS-PROJECT\JS\javascript.js"></script>
+<!-- <script src="C:\JS-PROJECT\JS\validation.js"></script> -->
 </body>
 </html>
 

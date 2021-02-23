@@ -33,10 +33,10 @@ input[type=text], select {
   /* #vname{
       color: red;
       font-weight: bold;
-  } */
-  span{
+  }  */
+   span{
     color: red;
-      font-weight: bold;  
+     font-weight: bold;  
   }
   .data{
       float: right;
@@ -44,6 +44,33 @@ input[type=text], select {
       padding: 50px;
   }
   th{
-      background: black;
+      background:green;
       color: white;
+      padding: 5px;
+      
   }
+
+  .edt{
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%;
+    height: 50%;
+  }
+  .upd{
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+  .dlt{
+    background-color: red;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%;
+    height: 50%;
+  }
+  .update_btn{
+    width: 400px;
+    background-color: orange;
+    float: left;
+  }   
